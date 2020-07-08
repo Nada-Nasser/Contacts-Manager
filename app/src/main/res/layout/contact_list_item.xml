@@ -23,6 +23,15 @@
         android:background="@drawable/call"/>
 
     <Button
+        android:id="@+id/EDIT_BUTTON"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@drawable/edit_icon"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
         android:id="@+id/DELETE_BUTTON"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -30,5 +39,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:background="@drawable/circled_x"
         android:layout_marginLeft="20dp"/>
+
+
 
 </LinearLayout>

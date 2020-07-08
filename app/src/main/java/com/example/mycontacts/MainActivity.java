@@ -214,6 +214,7 @@ public class MainActivity extends AppCompatActivity
             TextView contactNameTextView = contactsView.findViewById(R.id.CONTACT_NAME_TEXT_VIEW);
             Button callButton = contactsView.findViewById(R.id.CALL_BUTTON);
             Button deleteButton = contactsView.findViewById(R.id.DELETE_BUTTON);
+            Button editButton = contactsView.findViewById(R.id.EDIT_BUTTON);
 
             contactNameTextView.setText(contactItem.getName());
 
@@ -241,11 +242,26 @@ public class MainActivity extends AppCompatActivity
                 }
             });
 
+            editButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    editContact(contactItem);
+                }
+            });
+
             return contactsView;
         }
+    }
 
+
+    private void editContact(ContactItem contactItem)
+    {
+
+        Toast.makeText(getApplicationContext(),"Not Available for now",Toast.LENGTH_SHORT)
+                .show();
 
     }
+
 
     private void DeleteContact(final ContactItem contactItem)
     {
